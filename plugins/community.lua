@@ -4,6 +4,5 @@ return {
 
   { import = "astrocommunity.colorscheme.kanagawa-nvim" },
   { import = "astrocommunity.motion.mini-move" },
-  { import = "astrocommunity.motion.flash-nvim" },
   { import = "astrocommunity.motion.nvim-spider" },
 }
