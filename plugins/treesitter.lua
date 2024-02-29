@@ -33,13 +33,6 @@ return {
     "nvim-treesitter/nvim-treesitter-context",
     lazy = false,
     config = function()
-      vim.keymap.set(
-        "n",
-        "[c",
-        function() require("treesitter-context").go_to_context(vim.v.count1) end,
-        { desc = "Context start", silent = true }
-      )
-
       require("treesitter-context").setup {
         enable = true,
         max_lines = 0,
@@ -50,5 +43,13 @@ return {
         zindex = 20,
       }
     end,
+    keys = {
+      {
+        "[c",
+        mode = { "n" },
+        function() require("treesitter-context").go_to_context(vim.v.count1) end,
+        desc = "Context start",
+      },
+    },
   },
 }
