@@ -11,11 +11,6 @@ return {
       desc = "Toggle Spectre",
     },
     {
-      "<leader>fs",
-      mode = { "n" },
-      desc = "Spectre*",
-    },
-    {
       "<leader>fsw",
       mode = { "n" },
       function() require("spectre").open_visual { select_word = true } end,
